@@ -1,0 +1,47 @@
+{
+  "version": "2.0",
+  "visibility": "public",
+  "state_storage": {
+    "favorites": "localStorage only",
+    "completed": "localStorage only",
+    "notes": "收藏与完成只保存在当前浏览器，不上传 GitHub。"
+  },
+  "daily_brief": {
+    "cadence": "daily",
+    "categories": ["AI", "智能眼镜", "ISP", "图像传感器", "光学"],
+    "archive_policy": "长期保留 HTML / JSON / Markdown"
+  },
+  "weekly_deep": {
+    "cadence": "weekly",
+    "categories": ["低空经济", "养老经济", "具身智能", "历史"],
+    "archive_policy": "页面只保留最近 2 周，更早内容从站点移除"
+  },
+  "continuous_learning": {
+    "display_rule": "每次只显示一个任务",
+    "domains": ["ISP调优与算法", "C/C++/Python Coding", "中医", "摄影", "随机领域"],
+    "formats": [
+      "图文总结，不超过1000字",
+      "视频链接，不超过30分钟",
+      "有检查的编程题目，不超过50行"
+    ],
+    "completion_rule": "点完成后当前浏览器标记为已完成，后续更新换另一个任务",
+    "favorite_rule": "点收藏后进入本地收藏，未来可偶尔复现"
+  },
+  "life": {
+    "food": {
+      "input": "截图、照片、店名或文字",
+      "storage": "只存结构化文字，不存原图",
+      "fields": ["店名", "城市/区域", "菜系", "好吃/一般/难吃", "推荐菜", "避雷点", "价格", "日期", "备注"]
+    },
+    "travel": {
+      "input": "公开攻略链接和补充信息",
+      "storage": "保留公开原链接，输出定制文字攻略和复制按钮",
+      "privacy_note": "避免写入具体出行日期、住址、证件、航班号等敏感信息"
+    },
+    "media": {
+      "input": "喜欢的节目链接",
+      "storage": "保存抽象喜好画像和推荐结果",
+      "fields": ["题材", "节奏", "叙事风格", "镜头/美术", "情绪基调", "不喜欢的点"]
+    }
+  }
+}

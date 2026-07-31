@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daily Brief｜2026-07-30 AI 新闻简报</title>
-  <meta name="description" content="2026年7月30日 AI 行业热点新闻简报，含语音播报、日期归档和来源链接。">
+  <title>Daily Brief｜个人信息工作台</title>
+  <meta name="description" content="Daily Brief 2.0：每日简报、每周精读、持续学习、生活攻略、收藏与日期归档。">
   <link rel="stylesheet" href="../../../assets/style.css">
 </head>
 <body>
@@ -16,36 +16,69 @@
         <span>Daily Brief</span>
       </div>
       <nav class="nav" aria-label="页面导航">
-        <a href="#today">今日简报</a>
-        <a href="#ai-news">AI 新闻</a>
+        <a href="#daily-brief">每日简报</a>
+        <a href="#weekly-deep">每周精读</a>
+        <a href="#learning">持续学习</a>
+        <a href="#life">生活攻略</a>
+        <a href="#favorites">收藏</a>
         <a href="#archive">历史归档</a>
-        <a href="#sources">来源</a>
       </nav>
     </header>
 
     <main id="today">
       <section class="hero">
-        <p class="kicker">2026-07-30 · 最新一期</p>
-        <h1>今日 AI 行业热点简报</h1>
-        <p class="hero-summary">今天的主线是开放权重、智能体基础设施、AI for Science 与安全治理同步升温：模型能力竞争正在从单点 API 走向可部署生态，企业落地开始更重视效率、成本和工具互联。</p>
+        <p class="kicker">2026-07-30 · Daily Brief 2.0</p>
+        <h1>个人信息工作台</h1>
+        <p class="hero-summary">首页分成每日简报、每周精读、持续学习和生活攻略。公开页面只展示整理后的内容；完成和收藏状态存在你的手机浏览器本地，不写回 GitHub。</p>
+        <nav class="hero-categories" aria-label="核心分类">
+          <a href="#daily-brief">
+            <span class="category-mark">简</span>
+            <span>
+              <strong>简报</strong>
+              <em>AI、眼镜、ISP、传感器、光学</em>
+            </span>
+          </a>
+          <a href="#weekly-deep">
+            <span class="category-mark">读</span>
+            <span>
+              <strong>精读</strong>
+              <em>低空、养老、具身智能、历史</em>
+            </span>
+          </a>
+          <a href="#learning">
+            <span class="category-mark">学</span>
+            <span>
+              <strong>学习</strong>
+              <em>每日一个任务，完成后本地记录</em>
+            </span>
+          </a>
+          <a href="#life">
+            <span class="category-mark">生</span>
+            <span>
+              <strong>生活</strong>
+              <em>美食、旅行、影视推荐</em>
+            </span>
+          </a>
+        </nav>
         <div class="meta-row">
-          <span class="pill"><strong>7</strong> 条重点新闻</span>
-          <span class="pill"><strong>4</strong> 个方向：产品、资本、论文、治理</span>
-          <span class="pill"><strong>手机友好</strong> 支持语音播报</span>
+          <span class="pill"><strong>5</strong> 个每日简报栏目</span>
+          <span class="pill"><strong>4</strong> 个每周精读主题</span>
+          <span class="pill"><strong>1</strong> 个持续学习任务</span>
+          <span class="pill"><strong>本地</strong> 收藏与完成状态</span>
         </div>
       </section>
 
-      <section class="audio-panel" aria-label="语音播报">
+      <section class="audio-panel" aria-label="语音播报" data-audio-date="2026-07-30">
         <div class="audio-panel-header">
           <div>
             <p class="audio-title">听今日简报</p>
-            <p class="audio-hint">优先使用 MP3 音频版；如果当天音频还没生成，可用浏览器朗读备用。</p>
+            <p class="audio-hint">7 天内优先使用 MP3 音频版；本地打开时请先完整解压压缩包，不要在压缩包预览里直接打开网页。</p>
           </div>
         </div>
-        <div class="mp3-player">
+        <div class="mp3-player" data-mp3-player>
           <div class="mp3-copy">
             <strong>MP3 音频版</strong>
-            <span>预留位置：生成 <code>../../../audio/2026-07-30.mp3</code> 后会在这里播放。</span>
+            <span>音频文件：<code>../../../audio/2026-07-30.mp3</code>。本地使用时，必须和网页保持同一套解压后的文件夹结构。</span>
           </div>
           <audio controls preload="none">
             <source src="../../../audio/2026-07-30.mp3" type="audio/mpeg">
@@ -72,22 +105,50 @@
           <h2 id="overview-title">今日概览</h2>
           <div class="brief-grid">
             <div class="brief-stat">
-              <div class="num">7</div>
-              <div class="label">按重要性筛选的新闻</div>
+              <div class="num">5</div>
+              <div class="label">每日简报固定栏目</div>
             </div>
             <div class="brief-stat">
-              <div class="num">13</div>
-              <div class="label">保留来源链接，方便回溯</div>
+              <div class="num">4</div>
+              <div class="label">每周精读主题，保留 2 周</div>
             </div>
             <div class="brief-stat">
               <div class="num">1</div>
-              <div class="label">今日趋势点评，便于复盘</div>
+              <div class="label">每次只显示一个学习任务</div>
             </div>
           </div>
         </section>
 
-        <section id="ai-news" class="section" aria-labelledby="news-title">
-          <h2 id="news-title">AI 新闻</h2>
+        <section id="daily-brief" class="section" aria-labelledby="news-title">
+          <h2 id="news-title">每日简报</h2>
+          <div class="module-grid">
+            <article class="feature-card active">
+              <span class="tag">已更新</span>
+              <h3>AI</h3>
+              <p>今日已整理 7 条重点新闻，覆盖模型、资本、智能体基础设施、开放权重、安全治理与 AI for Science。</p>
+            </article>
+            <article class="feature-card">
+              <span class="tag">已更新</span>
+              <h3>智能眼镜</h3>
+              <p>本期重点看轻量化 AI 眼镜的三个变化：语音助手从“唤醒问答”转向连续上下文，拍摄与翻译成为高频入口，端侧模型让隐私和响应速度更可控。短期更值得关注的是佩戴舒适度、续航和麦克风阵列，而不是单纯堆显示参数。</p>
+            </article>
+            <article class="feature-card">
+              <span class="tag">已更新</span>
+              <h3>ISP</h3>
+              <p>今日学习重点放在 HDR 与 Tone Mapping 的联动：先保证高光不过曝，再让暗部细节自然抬起。调参时优先检查肤色、天空、灯牌和夜景暗部，避免局部增强把噪声、光晕和色偏一起放大。</p>
+            </article>
+            <article class="feature-card">
+              <span class="tag">已更新</span>
+              <h3>图像传感器</h3>
+              <p>本期关注堆栈式 CMOS 的价值：像素层、逻辑层和存储层分离后，传感器能在更高读出速度下支持多帧合成、HDR 与低噪声拍摄。手机影像继续追求大底和低功耗，车载与机器视觉则更看重动态范围、全局快门和稳定供货。</p>
+            </article>
+            <article class="feature-card">
+              <span class="tag">已更新</span>
+              <h3>光学</h3>
+              <p>今日光学主题是“轻薄化和画质的取舍”。手机端继续用潜望、自由曲面和计算摄影弥补物理空间不足；眼镜端更依赖波导、微显示和耦合效率。评价一个方案时，不只看分辨率，还要看亮度、畸变、鬼影、良率和成本。</p>
+            </article>
+          </div>
+          <h3 class="subsection-title" id="ai-news">AI 新闻</h3>
           <div class="cards">
             <article class="news-card">
               <div class="card-top">
@@ -167,7 +228,108 @@
             <p><strong>今日趋势点评：</strong>今天的 AI 行业主线呈现出“开放权重、智能体基础设施、AI for Science、安全治理”同步升温的格局。Kimi K3 和开放权重公开信说明模型能力竞争正在从闭源 API 走向可部署生态竞争，而 Gemini、OpenAI 转录模型和 MCP 更新则反映企业级落地更加重视效率、成本和工具互联。与此同时，员工联署与 Raygun、AIMS 等科学智能体进展形成鲜明对照，显示行业正在一边推动 AI 自主研发和科学发现能力，一边加速建立更可验证、可控的安全与治理框架。</p>
           </div>
         </section>
+
+        <section id="weekly-deep" class="section" aria-labelledby="weekly-title">
+          <h2 id="weekly-title">每周精读</h2>
+          <p class="section-note">四个主题都更新，只保留最近 2 周。更早内容从页面和数据里移除，避免首页变成资料坟场。</p>
+          <div class="module-grid">
+            <article class="feature-card" data-item-id="weekly-low-altitude-2026w31">
+              <span class="tag">本周精读</span>
+              <h3>低空经济</h3>
+              <p>低空经济正在从概念走向基础设施建设，核心不只是飞行器，而是空域管理、起降点、通信导航、监管平台和保险体系。短期更现实的场景是巡检、测绘、应急、文旅和园区物流，载人 eVTOL 仍需要等待安全认证、航线管理和公众接受度成熟。</p>
+              <div class="action-row">
+                <button class="state-button" data-action="favorite" data-title="每周精读：低空经济">收藏</button>
+                <button class="state-button" data-action="complete" data-title="每周精读：低空经济">完成</button>
+              </div>
+            </article>
+            <article class="feature-card" data-item-id="weekly-silver-economy-2026w31">
+              <span class="tag">本周精读</span>
+              <h3>养老经济</h3>
+              <p>养老经济的机会集中在“有人照护”和“少打扰地照护”之间：社区护理、慢病管理、适老化家居、康复设备和陪伴型机器人都在增长。真正能落地的产品通常不是炫技，而是减少家属焦虑、降低护理人员负担，并让老人保留尊严和自主感。</p>
+              <div class="action-row">
+                <button class="state-button" data-action="favorite" data-title="每周精读：养老经济">收藏</button>
+                <button class="state-button" data-action="complete" data-title="每周精读：养老经济">完成</button>
+              </div>
+            </article>
+            <article class="feature-card" data-item-id="weekly-embodied-ai-2026w31">
+              <span class="tag">本周精读</span>
+              <h3>具身智能</h3>
+              <p>具身智能的关键瓶颈仍是数据和可靠性。大模型让机器人更会理解指令，但真正进入工厂、仓储和家庭，还要解决抓取失败、环境变化、成本维护和安全边界。近期值得关注的是遥操作数据采集、仿真训练、通用末端执行器和低成本人形平台。</p>
+              <div class="action-row">
+                <button class="state-button" data-action="favorite" data-title="每周精读：具身智能">收藏</button>
+                <button class="state-button" data-action="complete" data-title="每周精读：具身智能">完成</button>
+              </div>
+            </article>
+            <article class="feature-card" data-item-id="weekly-history-2026w31">
+              <span class="tag">本周精读</span>
+              <h3>历史</h3>
+              <p>本周历史主题关注“技术扩散如何改变秩序”。从印刷术、铁路、电报到互联网，每次新基础设施出现，都会先改变信息流动和组织方式，再改变商业、战争与治理。读历史时可以少问“谁赢了”，多看资源、制度和传播速度怎样重新分配权力。</p>
+              <div class="action-row">
+                <button class="state-button" data-action="favorite" data-title="每周精读：历史">收藏</button>
+                <button class="state-button" data-action="complete" data-title="每周精读：历史">完成</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="learning" class="section" aria-labelledby="learning-title">
+          <h2 id="learning-title">持续学习</h2>
+          <p class="section-note">每次只显示一个任务。点“完成”后在当前浏览器隐藏，下一次更新时换另一个；点“收藏”后进入本地收藏，未来可以偶尔复现。</p>
+          <article class="learning-card" data-item-id="learning-isp-tone-mapping-2026-07-30">
+            <div class="card-top">
+              <span class="tag">今日任务 · ISP 调优与算法</span>
+              <span class="tag muted-tag">图文，不超过 1000 字</span>
+            </div>
+            <h3>理解 Tone Mapping：把宽动态场景压进一张好看的照片</h3>
+            <p>Tone Mapping 的核心任务，是把传感器或 HDR 合成得到的高动态范围亮度，映射到屏幕和 JPEG 能表达的较窄范围。它不是简单“压暗高光、提亮阴影”，而是在保留层次、对比和自然感之间折中。</p>
+            <p>调 ISP 时可以把它看成三层：全局曲线决定整体明暗，局部增强决定暗部和高光的可见细节，保护逻辑负责避免天空、肤色、灯牌等区域变脏或过度锐利。一个常见问题是暗部拉得太猛，噪声、色偏和局部光晕会一起出现；另一个问题是高光压得太狠，画面会变灰，金属和天空失去通透感。</p>
+            <p>检查一组 Tone Mapping 参数时，先看肤色，再看天空，再看暗部噪声，最后看强光边缘是否有 halo。不要只盯直方图，直方图合理不代表照片舒服；人眼更敏感的是局部关系和熟悉物体的自然度。</p>
+            <div class="action-row">
+              <button class="state-button" data-action="favorite" data-title="持续学习：理解 Tone Mapping">收藏</button>
+              <button class="state-button" data-action="complete" data-title="持续学习：理解 Tone Mapping">完成</button>
+            </div>
+          </article>
+        </section>
+
+        <section id="life" class="section" aria-labelledby="life-title">
+          <h2 id="life-title">生活攻略</h2>
+          <div class="module-grid">
+            <article class="feature-card" data-item-id="life-food-ledger">
+              <span class="tag">美食记录</span>
+              <h3>只存结构化文字，不存原图</h3>
+              <p>你上传截图、照片、店名或文字后，我提取店名、城市/区域、菜系、评价、推荐菜、避雷点和备注。图片只作为临时输入，不进入公开网页。</p>
+              <div class="action-row">
+                <button class="state-button" data-action="favorite" data-title="生活攻略：美食记录规则">收藏</button>
+              </div>
+            </article>
+            <article class="feature-card" data-item-id="life-travel-planner">
+              <span class="tag">旅游攻略</span>
+              <h3>保留公开原链接，生成可复制路线</h3>
+              <p id="travel-copy">你提供公开攻略链接、目的地、天数、预算、同行人和偏好后，我保留原链接，并整理成每日路线、交通、餐饮、避坑点和备选方案。不要写入具体证件、住址、航班号等隐私信息。</p>
+              <div class="action-row">
+                <button class="state-button" data-copy-target="travel-copy">复制说明</button>
+                <button class="state-button" data-action="favorite" data-title="生活攻略：旅游攻略规则">收藏</button>
+              </div>
+            </article>
+            <article class="feature-card" data-item-id="life-media-taste">
+              <span class="tag">影视推荐</span>
+              <h3>根据链接学习审美相近内容</h3>
+              <p>你发喜欢的节目链接后，我把偏好抽象成题材、节奏、叙事风格、镜头气质和不喜欢的点，再推荐审美相近的节目。页面公开展示推荐结果，不公开原始观看记录细节。</p>
+              <div class="action-row">
+                <button class="state-button" data-action="favorite" data-title="生活攻略：影视推荐规则">收藏</button>
+              </div>
+            </article>
+          </div>
+        </section>
       </div>
+
+      <section id="favorites" class="archive-panel" aria-labelledby="favorites-title">
+        <h2 id="favorites-title">本地收藏</h2>
+        <p class="section-note">收藏只保存在当前手机浏览器里，不上传 GitHub。换手机、换浏览器或清缓存会丢。</p>
+        <ul class="archive-list" data-favorites-list>
+          <li class="empty-state">还没有收藏内容。</li>
+        </ul>
+      </section>
 
       <section id="archive" class="archive-panel" aria-labelledby="archive-title">
         <h2 id="archive-title">历史归档</h2>
